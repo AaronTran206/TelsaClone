@@ -11,6 +11,7 @@ import Button from "../button/Button"
 import { carsType } from "../utils/interfaces"
 
 const CarItem: React.FC<carsType> = (props) => {
+  //destructure props array by using the carsType interface defined in the utils folder
   const { name, tagline, taglineCTA, image } = props.car
 
   return (

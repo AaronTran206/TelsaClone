@@ -6,6 +6,7 @@ const Header: React.FC<{}> = ({}) => {
   return (
     <View style={styles.container}>
       <Image
+        //Source = src in regular HTML
         style={styles.logo}
         source={require("../../assets/logo.png")}
       ></Image>

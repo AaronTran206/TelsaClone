@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: "100%",
+    //cover will just resize the image to cover the whole screen. Contain will try and fit the whole image into the screen
     resizeMode: "cover",
     position: "absolute",
   },

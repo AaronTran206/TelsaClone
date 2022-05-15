@@ -7,6 +7,9 @@ import styles from "./styles"
 const CarsList: React.FC<{}> = () => {
   return (
     <View style={styles.container}>
+      {/*Flatlist is the equivalent to the map method in regular JavaScript. Data defines the array. RenderItem is the function called on each array. 
+      
+      Other properties can be called. snapToAlignment, decelerationRate, and snapToInterval provides the logic for scrolling behavior*/}
       <FlatList
         data={Cars}
         renderItem={({ item }) => <CarItem car={item} />}
