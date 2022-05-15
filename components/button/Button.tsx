@@ -1,6 +1,6 @@
 import React from "react"
 import { View, Text, Pressable } from "react-native"
-import btnStyles from "./btnStyles"
+import styles from "./styles"
 
 const Button: React.FC<{
   type: string
@@ -17,14 +17,14 @@ const Button: React.FC<{
   const textColor = type === "primary" ? "white" : "black"
 
   return (
-    <View style={btnStyles.container}>
+    <View style={styles.container}>
       {/* similar to anchor tag in CSS but for mobile devices. */}
       <Pressable
-        style={[btnStyles.button, { backgroundColor: backgroundColor }]}
+        style={[styles.button, { backgroundColor: backgroundColor }]}
         onPress={() => onPress()}
       >
         {/*Can add style beyond styles on the stylesheet by making the style property an array*/}
-        <Text style={[btnStyles.text, { color: textColor }]}>{content}</Text>
+        <Text style={[styles.text, { color: textColor }]}>{content}</Text>
       </Pressable>
     </View>
   )
